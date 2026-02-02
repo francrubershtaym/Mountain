@@ -10,6 +10,7 @@
 
 body {
     background: #FBFBFB;
+    min-width: 320px;
 }
 
 .header {
@@ -98,7 +99,7 @@ body {
 .baner__name {
     font-family: "Share Tech Mono", sans-serif;
     font-weight: 400;
-    font-size: 80px;
+    font-size: clamp(1.563rem, 0.221rem + 6.71vw, 5rem);
     color: #242424;
 
 }
@@ -140,7 +141,8 @@ body {
     max-width: 639px;
     width: 100%;
 }
-.about__img{
+
+.about__img {
     width: 100%;
 }
 
@@ -225,7 +227,8 @@ body {
 
 .catalog__left-link {
     display: inline-block;
-    width: 215px;
+    max-width: 263px;
+    width: 100%;
     padding: 16px;
     text-align: center;
     text-decoration: none;
@@ -248,7 +251,8 @@ body {
     max-width: 545px;
     width: 100%;
 }
-.catalog__right-img{
+
+.catalog__right-img {
     width: 100%;
 }
 
@@ -257,7 +261,7 @@ body {
     border: 1px solid #242424;
 }
 
-.footer__wrap {
+    .footer__wrap{
     display: flex;
     justify-content: space-between;
     align-items: center;
